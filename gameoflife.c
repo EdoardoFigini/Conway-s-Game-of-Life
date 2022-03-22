@@ -6,6 +6,7 @@
 #include "Resources/err.h"
 
 #define TICK 250 /*milliseconds*/
+#define ALIVE "\u2588"
 
 int argCheck(char*);
 int** allocMatrix(int, int);
@@ -164,7 +165,7 @@ void print(int** grid, int currentGen, int dimx, int dimy){
       if(grid[i][j]==0){
         printf(" ");
       } else {
-        printf("\u2588");
+        printf("%s", ALIVE);
       }
     }
     printf("\n");
