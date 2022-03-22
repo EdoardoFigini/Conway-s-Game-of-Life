@@ -2,6 +2,12 @@
 [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) implemented in C.
 
 ## Usage:
+###Compiling:
+```bash
+$ gcc Resources/err.c gameoflife.c -o gameoflife
+```
+
+###Execution:
 Recieves x dimension, y dimension, input seed text file, number of generations and mode as arguments
 ```console
 $ ./gameoflife 23 23 seed.txt 10 0
