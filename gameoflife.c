@@ -10,6 +10,7 @@
 
 int argCheck(char*);
 int** allocMatrix(int, int);
+void freeMatrix(int**, int);
 int** getSeed(int**, char*, int, int);
 int** newGen(int**, int, int);
 int check(int**, int, int, int, int);
