@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include "Resources/err.h"
 
-#define TICK 250 /*milliseconds*/
+#define TICK 100 /*milliseconds*/
 #define ALIVE "\u2588"
 
 int argCheck(char*);
@@ -160,9 +160,9 @@ void print(int** grid, int currentGen, int dimx, int dimy){
   int i, j;
 
   printf("\e[1;1H\e[2J");
-  printf("Current Generation: %d", currentGen);
-  for(i=0; i<dimy; i++){
-    for(j=0; j<dimx; j++){
+  printf("Current Generation: %d\n", currentGen);
+  for(i=1; i<dimy-1; i++){
+    for(j=1; j<dimx-1; j++){
       if(grid[i][j]==0){
         printf(" ");
       } else {
